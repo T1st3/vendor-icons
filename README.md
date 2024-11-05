@@ -28,7 +28,7 @@ This project just provides icons from various projects. All icons are made avail
 
 ## CSS spritesheets
 
-You can insert the icons directly into your HTML with a common IMG tag:
+You can insert the icons directly into your HTML with a common `IMG` tag:
 
 ```html
 <img alt="Github logo" src="dist/32x32/github.png" width="32" height="32">
@@ -48,57 +48,57 @@ All the positioning of the icons inside this alone image is made through CSS, wh
 <div class="vendor-icons github"></div>
 ```
 
-Just remember to add the CSS stylesheet to the HEAD of your HTML page!
+Just remember to add the CSS stylesheet to the `HEAD` of your HTML page!
 
 
 ## Install
 
 ### Get the package with NPM
 
-> npm install vendor-icons
+> `npm install vendor-icons`
 
 
 ### Get the package with Bower
 
-> bower install vendor-icons
+> `bower install vendor-icons`
 
 
 ### Get the package with Composer / Packagist
 
-> composer require legacy-icons/vendor-icons
+> `composer require legacy-icons/vendor-icons`
 
 
 ### Get the package with NuGet
 
-> Install-Package vendor-icons
+> `Install-Package vendor-icons`
 
 
 ## Build the whole project or your custom project
 
-We use [Gulp](http://gulpjs.com/) to build the project, so if you want to re-build or customize this project, you'll need Gulp.
+We use [`Gulp`](http://gulpjs.com/) to build the project, so if you want to re-build or customize this project, you'll need `Gulp`.
 
 After gulp is installed, and your CLI is pointed to your work directory, first install the dependencies:
 
 **with NPM 2.x.x**
 
-> npm install
+> `npm install`
 
 **with NPM 3.x.x** (resolve dependencies for `node-spritesheet` before this module's ones)
 
-> npm install grunt grunt-contrib-coffee grunt-contrib-clean
+> `npm install grunt grunt-contrib-coffee grunt-contrib-clean`
 
-> npm install
+> `npm install`
 
 then be sure that you have *[ImageMagick](http://www.imagemagick.org/script/binary-releases.php)* installed for building spritesheet.
 
 then, you can run the `gulp build` task to build the project:
 
-> gulp build
+> `gulp build`
 
 
 ### What the build task does?
 
-First, it takes PNG files from the `src` folder, and pastes them to the `dist` folder.
+First, it takes `PNG` files from the `src` folder, and pastes them to the `dist` folder.
 
 Then it creates a spritesheet from the PNG images located in the `src` folder, and thus creates the `sprite` folder in `dist`.
 
